@@ -12,11 +12,13 @@ public class CustomerServiceImpl implements CustomerService {
     @Autowired
     private CustomerRepository customerRepository;
 
-    // Read Operation
+    // Read Operation for All Records
     @Override public List<Customer> fetchCustomerList(){
         return (List<Customer>)
                 customerRepository.findAll();
     }
+
+    // Read Operation Per Account
 
     // Save Operation
     @Override
@@ -24,6 +26,16 @@ public class CustomerServiceImpl implements CustomerService {
         return customerRepository.save(customer);
     }
 
+    // Post and Inquiry Transaction
+    @Override
+    public Customer updateTransaction(Customer customer, Long CustomerAcctNumber) {
+        Customer cusDB
+                = customerRepository.findById(CustomerAcctNumber)
+                .get();
+        cusDB.setCustomerBalance(customer.getCustomerBalance());
+        return customerRepository.save(cusDB);
+
+    }
     // Update Operation
     @Override
     public Customer updateCustomer(Customer customer, Long CustomerAcctNumber){

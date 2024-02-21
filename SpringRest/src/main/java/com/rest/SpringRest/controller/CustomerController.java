@@ -32,6 +32,15 @@ public class CustomerController {
 
     }
 
+    // Post Transaction Operation
+    @PutMapping("/transactions/{accountNumber}")
+
+    public Customer updateTransaction(@RequestBody Customer customer, @PathVariable("accountNumber") Long CustomerAcctNumber){
+        return customerService.updateCustomer(
+                customer, CustomerAcctNumber);
+
+    }
+
     // Delete Operation
     @DeleteMapping("/customers/{acctNumber}")
 

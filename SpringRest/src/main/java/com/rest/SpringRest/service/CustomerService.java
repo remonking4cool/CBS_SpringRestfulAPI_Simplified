@@ -10,6 +10,9 @@ public interface CustomerService {
     // Save Operation
     Customer saveCustomer(Customer product);
 
+    // Post Transaction
+    Customer updateTransaction(Customer customer, Long CustomerAcctNumber);
+
     // Update Operation
     Customer updateCustomer(Customer product, Long productId);
 

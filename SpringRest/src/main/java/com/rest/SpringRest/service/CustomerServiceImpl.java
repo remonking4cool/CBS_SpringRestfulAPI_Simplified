@@ -45,6 +45,10 @@ public class CustomerServiceImpl implements CustomerService {
         }
         cusDB.setCustomerBVN(customer.getCustomerBVN());
         cusDB.setCustomerPhoneNo(customer.getCustomerPhoneNo());
+        cusDB.setCustomerAge(customer.getCustomerAge());
+        cusDB.setCustomerBalance(customer.getCustomerBalance());
+        cusDB.setCustomerCIFId(customer.getCustomerCIFId());
+        cusDB.setCustomerEmailAddress(customer.getCustomerEmailAddress());
         return customerRepository.save(cusDB);
 
     }

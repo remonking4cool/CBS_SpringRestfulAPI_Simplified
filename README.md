@@ -43,7 +43,6 @@ A REST API (Representational State Transfer Application Programming Interface) i
 ========================================================================================================================================
 
 Required Installations: 
-To perform the demo, you require the following installations:
 
 Java: Java is a widely used, object-oriented programming language known for its platform independence and versatility.
 IntelliJ: IntelliJ IDEA is an integrated development environment (IDE) for software development, primarily used for Java projects.

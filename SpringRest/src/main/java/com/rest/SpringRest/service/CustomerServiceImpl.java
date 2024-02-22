@@ -5,8 +5,10 @@ import com.rest.SpringRest.repository.CustomerRepository;
 import java.util.List;
 import java.util.Objects;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Service;
 
+@Configuration
 @Service
 public class CustomerServiceImpl implements CustomerService {
     @Autowired

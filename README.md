@@ -30,6 +30,7 @@ Method = POST(JSON Format) Operation  || Post Transaction
 Method = DELETE(JSON Format) Operation || Delete Customer
 
 ====================================================================================================================================
+
 What is Spring Boot?
 Spring Boot is a framework built on top of Spring, including all its features. It’s popular among developers because it offers a quick production-ready setup, allowing them to concentrate on coding instead of dealing with configurations. With its microservice approach, creating production-ready applications is fast and easy.
 

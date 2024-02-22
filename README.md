@@ -20,10 +20,15 @@ UPDATE Operation: Executes an update statement on the table, based on the input 
 DELETE Operation: Removes a designated row from the table, also depending upon the input parameter.
 
 Method = POST(JSON Format) Operation  || Create Customer
+
 Method = PUT(JSON format) Operation || Update Customer
+
 Method = GET(JSON Format) Operation || Get Customer's
+
 Method = POST(JSON Format) Operation  || Post Transaction
+
 Method = DELETE(JSON Format) Operation || Delete Customer
+
 ====================================================================================================================================
 What is Spring Boot?
 Spring Boot is a framework built on top of Spring, including all its features. It’s popular among developers because it offers a quick production-ready setup, allowing them to concentrate on coding instead of dealing with configurations. With its microservice approach, creating production-ready applications is fast and easy.
@@ -33,6 +38,7 @@ MySQL is a widely used open-source relational database management system. It eff
 
 What is REST API?
 A REST API (Representational State Transfer Application Programming Interface) is a set of rules that enable different software applications to communicate and interact over the Internet. It follows the principles of REST, using standard HTTP methods like GET, POST, PUT, and DELETE to perform operations on resources such as data or services. REST APIs use URLs to identify resources and return data in formats like JSON or XML. This architecture promotes scalability, modularity, and simplicity, allowing diverse systems to work together seamlessly. REST APIs are widely used for building web services, mobile apps, and other distributed software applications.
+
 ========================================================================================================================================
 
 Required Installations: 
